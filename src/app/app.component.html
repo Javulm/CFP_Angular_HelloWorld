@@ -1,11 +1,16 @@
+<!--UC1-"Hello From BridgeLabz" using one way data binding-->
 <div>
   <h1>
+    <!--{this.userName}} Change in the userName reflected in the header Tag-->
     Hello {{this.userName}} from BridgeLabz
+    <!--UC2-Display BridgeLabz Logo using Property Binding-->
     <img [src]="imageUrl" (click)="onClick($event)" alt="#Briglabz logo">
   </h1>
 </div>
 <div>
+  <!--UC4-Bind the input Form Element using [(ngModel)] to userName-->
   <input (input)="onInput($event)" [(ngModel)]="userName" />
+  <!--UC5-Throws the message if Input is Invalid-->
   <span class=error-output>{{this.nameError}}</span>
 </div>
 <router-outlet></router-outlet>
