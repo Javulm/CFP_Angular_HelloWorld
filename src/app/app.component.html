@@ -1,7 +1,10 @@
 <div>
   <h1>
-    {{this.title}}
+    Hello {{this.userName}} from BridgeLabz
     <img [src]="imageUrl" (click)="onClick($event)" alt="#Briglabz logo">
   </h1>
+</div>
+<div>
+  <input [(ngModel)]="userName" />
 </div>
 <router-outlet></router-outlet>
